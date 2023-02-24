@@ -1,0 +1,32 @@
+<mat-tab-group>
+  <mat-tab label="First"> Content 1
+        <ejs-grid #grid  id='grid'[dataSource]='data' rowHeight= 30 (rowSelected)='rowSelected($event)' [selectedRowIndex]="24"  height='600' >
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+            <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'></e-column>
+            <e-column field='ShippedDate' headerText='Shipped Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
+        </e-columns>
+    </ejs-grid> </mat-tab>
+   
+  <mat-tab label="Second"> Content 2 
+     <ejs-grid #grid1  id='grid1'[dataSource]='data' rowHeight= 30 (rowSelected)='rowSelected1($event)'  [selectedRowIndex]="24" height='600' >
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+            <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'></e-column>
+            <e-column field='ShippedDate' headerText='Shipped Date' width='130' format="yMd" textAlign='Right'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
+        </e-columns>
+    </ejs-grid>
+  </mat-tab>
+ 
+</mat-tab-group>
+
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
